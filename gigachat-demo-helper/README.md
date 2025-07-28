@@ -1,0 +1,1 @@
+Helper project. It contains a simple HttpServer to handle requests. Used for gigachat-demo/src/.../HttpRequestInToolExample scenario.
