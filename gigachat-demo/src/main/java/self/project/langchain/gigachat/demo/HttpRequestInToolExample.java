@@ -109,17 +109,3 @@ public class HttpRequestInToolExample {
         static record CountResult(@Description(value = "количество символов в слове или числе") Long count) {}
     }
 }
-
-/*
- * 149 597 870
- * 1
- * 1
- * 0
- * 0
- * 1
- * 1
- * 0
- * 2
- * 1
- * 2
- */

@@ -12,6 +12,7 @@ import com.sun.net.httpserver.HttpServer;
 public class CharCounter {
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+
         server.createContext("/count", exchange -> {
             System.out.println("Got request on /count");
             InputStreamReader isr =  new InputStreamReader(exchange.getRequestBody(),"utf-8");
@@ -43,6 +44,7 @@ public class CharCounter {
             }
             server.stop(3);
         });
+        
         server.start();
     }
 
